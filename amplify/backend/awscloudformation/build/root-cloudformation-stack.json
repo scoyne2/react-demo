@@ -214,7 +214,40 @@
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
           "S3DeploymentBucket": "amplify-amplify77aeee6fab594-staging-40225-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/37be9fb5c2ec4833c872250d8d3ddf00ad95fc32",
+          "S3DeploymentRootKey": "amplify-appsync-files/a3f4b68d189fa04a527b049269301d0621281ed6",
+          "env": "staging"
+        }
+      }
+    },
+    "storages377a3a74f": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify77aeee6fab594-staging-40225-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "Parameters": {
+          "bucketName": "reactdemoamplifyapp63df54b119fe4f0dbd16025b84b2",
+          "selectedGuestPermissions": "",
+          "selectedAuthenticatedPermissions": "s3:PutObject",
+          "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+          },
+          "authRoleName": {
+            "Ref": "AuthRoleName"
+          },
+          "s3PrivatePolicy": "Private_policy_77a3a74f",
+          "s3ProtectedPolicy": "Protected_policy_77a3a74f",
+          "s3PublicPolicy": "Public_policy_77a3a74f",
+          "s3ReadPolicy": "read_policy_77a3a74f",
+          "s3UploadsPolicy": "Uploads_policy_77a3a74f",
+          "authPolicyName": "s3_amplify_77a3a74f",
+          "unauthPolicyName": "s3_amplify_77a3a74f",
+          "AuthenticatedAllowList": "DISALLOW",
+          "GuestAllowList": "DISALLOW",
+          "s3PermissionsAuthenticatedPrivate": "s3:PutObject",
+          "s3PermissionsAuthenticatedProtected": "s3:PutObject",
+          "s3PermissionsAuthenticatedPublic": "s3:PutObject",
+          "s3PermissionsAuthenticatedUploads": "s3:PutObject",
+          "s3PermissionsGuestPublic": "DISALLOW",
+          "s3PermissionsGuestUploads": "DISALLOW",
           "env": "staging"
         }
       }

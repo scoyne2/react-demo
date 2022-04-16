@@ -1,0 +1,12 @@
+{
+  "resourceName": "s377a3a74f",
+  "policyUUID": "77a3a74f",
+  "bucketName": "reactdemoamplifyapp63df54b119fe4f0dbd16025b84b2",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
